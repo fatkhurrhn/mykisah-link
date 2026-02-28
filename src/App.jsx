@@ -10,10 +10,15 @@ import Login from './pages/admin/Login';
 import Dashboard from './pages/admin/Dashboard';
 import ManageAnime from './pages/admin/ManageAnime';
 import ManageReelsAnime from './pages/admin/ManageReelsAnime';
+import Tess from './pages/Tess';
 
 function App() {
   return (
     <Routes>
+      <Route path="/tes" element={<Tess />} />
+
+
+
       {/* ── Anime Routes ──────────────── */}
       <Route path="/" element={<Home />} />
       <Route path="/anime/:id" element={<AnimeDetail />} />
